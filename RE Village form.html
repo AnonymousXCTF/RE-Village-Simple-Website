@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title>RE : Village Survey</title>
+    <img id="bg-img" src="https://www.residentevil.com/village/assets/images/common/share.png">
+    <h1 id="title" style="text-align: center; color: white; background: #000; width: 290px;border: none;border-radius: 10px;padding: 35px;opacity: 90%;margin: 20px;margin-left: 490px;background-color: #000;">RE : Village</h1>
+    <div id="form">
+        <form class="form">
+            <label class="nm" style="text-align: center; font-size: 1.2em; color: white;">Name</label><br />
+            <input type="text" class="name" placeholder="Enter your name" style="text-align: left;" required/><br />
+            <label  style="color: white;" for="console" class="fav"><b>Who's your most favorite Dimitrescu family members?</b></label><br>
+            <select id="dropdown" class="form-control" name="console" required>
+            <option disabled selected value>Choose one</option>
+            <option value="Alcina Dimitrescu">Alcina Dimitrescu (Lady D)</option>
+            <option value="Bela Dimitrescu">Bela Dimitrescu</option>
+            <option value="Cassandra Dimitrescu">Cassandra Dimitrescu</option>
+            <option value="Daniela Dimitrescu">Daniela Dimitrescu</option>
+            </select><br /> 
+            <label class="rsn" style="text-align: center; font-size: 1.2em; color: white;">Reason</label><br />
+            <input type="text" class="reason" placeholder="Your reason" style="text-align: left;" required/><br />
+            <div id="submitbtn">
+                <button id="submit">
+                    <span>Submit</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</html>
+<style>
+    body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} #form {margin-top: 50px;} #bg-img {position: absolute;right: 0;bottom: 0;min-width: 100%;min-height: 100%;width: auto;height: auto;z-index: -100;} .name {color: white; background: none; border: none; outline: none; margin-top: 15px; margin-bottom: 40px; width: 460px; height: 30px; border-radius: 5px;} .fav {margin-top: 15px;} #dropdown {margin-top: 15px; margin-bottom: 40px; height: 30px; border-radius: 5px;} .reason {color: white; background: none; border: none; outline: none; width: 460px;margin-top: 15px; margin-bottom: 55px; height: 30px; border-radius: 5px;} #submit {padding: 5px; color: white; background: none; border: 2px solid #4caf50; border-radius: 5px; margin-left: 170px; cursor: pointer; height: 30px; width: 30%;} .form {width: 480px;border: none;border-radius: 10px;padding: 35px;opacity: 90%;margin: 20px;margin-left: 400px;background-color: #000;} .name::placeholder {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.1em;} .reason::placeholder {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.1em;} #dropdown {border: none; background: none; width: 460px;} #submit:hover {background: green; color: #fff; transition: .4s;} input::placeholder {color: #d3d3d3;} select {color: white;} input:focus-within {color: white;} input[type='text'] {overflow: hidden; padding: 8px 0; border-bottom: 1px solid #4caf50} select option {background: #000;}
+</style>
